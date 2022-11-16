@@ -1,0 +1,51 @@
+/* our team */
+
+
+.section-team {
+    background-color: rgba(245, 244, 250, 1);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section-namelist {
+    @include flexed(center,center);
+    gap: 30px;
+    width: 1170px;
+    
+  }
+  
+  
+  /* team cards */
+  .cards {
+    background-color: rgba(255, 255, 255, 1);
+  
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  
+    border-radius: 0px 0px 4px 4px;
+  
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  
+  .name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .position {
+    
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    margin-top: 10px;
+    text-align: center;
+    color: var(--primery-text-color-gray);
+    margin-bottom: 16px;
+  }
+  
+  

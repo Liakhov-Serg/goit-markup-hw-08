@@ -1,0 +1,47 @@
+/* Особливості */
+.box-works {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .box-works__item::before {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    background-image: url(../images/attentionmin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    margin-bottom: 30px;
+  }
+  
+  .box-works__item:nth-child(2)::before {
+    background-image: url(../images/oclockmin.svg);
+  }
+  
+  .box-works__item:nth-child(3)::before {
+    background-image: url(../images/planningmin.svg);
+  }
+  .box-works__item:nth-child(4)::before {
+    background-image: url(../images/technologymin.svg);
+  }
+  .section-title {
+    font-weight: bold;
+    line-height: 1.17;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .section-task {
+    
+    line-height: 1.71;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+    
+    color: var(--primery-text-color-gray);
+    
+      }
+  
+  

@@ -1,0 +1,151 @@
+.main-nav {
+  @include flexed(center,center);
+  }
+  .header .link:hover,
+  .header .link:focus {
+    color: rgba(33, 150, 243, 1);
+    
+    
+  }
+
+/* site-nav */
+.site-nav {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  
+  ul.site-nav__link {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .site-nav {
+    display: flex;
+  
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  
+  
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  
+  .site-nav:not(first-child) {
+    color: var(--body-text-color);
+  }
+  
+  
+  .site-nav__item {
+     margin-right: 50px;
+     color: var(--body-text-color);
+  }
+  .site-nav__item:last-child {
+    margin-right: 0;
+  }
+  .site-nav__link--carrent {
+    position: relative;
+    
+  }
+  .site-nav__link--carrent::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--body-text-color);
+     bottom: -6px;
+    position: absolute;
+  }
+  
+  .site-nav__link--carrent {
+   
+  color: #2196F3;
+  }
+  
+  
+  
+  /* auth-nav */
+  .auth-nav {
+    display: flex;
+    margin-left: auto;
+    align-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 100%;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primery-text-color-gray);
+  
+   }
+  .auth-nav .mail {
+    margin-right: 0px;
+    margin-left: 0px;
+  
+   
+  }
+  .a.link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .auth-nav .tel {
+    margin-right: 0px;
+    margin-left: 50px;
+    
+  }
+  
+  .auth-nav__item--mail,
+  .auth-nav__item--tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 10px;
+    color:var(--primery-text-color-gray);
+    text-decoration: none;
+  
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+   
+  .auth-nav__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .auth-nav .item + .item {
+    margin-left: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+  }
+  .header__link__mail:hover,
+  .header__link__mail:focus {
+    color: var(--body-text-color);
+    
+    
+  }
+  .header__link__tel:hover,
+  .header__link__tel:focus {
+    color: var(--body-text-color);
+    
+  
+  }
+  .tech__link {
+    fill: currentColor;
+  
+    
+  }
+  .tech__link:hover,
+  .tech__link:focus {
+   fill: var(--body-text-color);
+   
+  }
+  
+    

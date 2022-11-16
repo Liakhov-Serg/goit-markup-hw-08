@@ -1,0 +1,247 @@
+.cont__footer {
+    display: flex;
+  }
+  
+  /* footer backgraund */
+  
+  .footer {
+    background-color: rgba(47, 48, 58, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  /*logo footer*/
+  .footer__accent--color {
+    color: var(--primery-fon-color);
+  }
+  .logo-footer .accent-footer:focus,
+  .logo-footer .accent-footer:hover {
+    color: var(--body-text-color);
+  }
+  
+  
+  
+  
+  .map {
+    
+    line-height: 1.71;
+    /* or 171% */
+  
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--primery-fon-color);
+  
+    display: inline-block;
+    margin-top: 20px;
+  
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  
+    &:focus,
+    &:hover {
+      color: var(--body-text-color);
+      
+    }
+  }
+  
+  .mail-footer {
+    
+    
+    line-height: 1.71;
+    /* or 171% */
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin-top: 9px;
+  
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  
+    &:hover,
+  &:focus {
+    color: var(--body-text-color);
+  }
+  
+  }
+  
+  .tel-footer {
+    
+  
+    
+    line-height: 1.71;
+    /* or 171% */
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  
+    display: inline-block;
+    margin-top: 9px;
+  
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+    
+    &:focus,
+    &:hover {
+      color: var(--body-text-color);
+      
+    }
+  
+  
+  }
+   
+  .footer__join {
+    margin-left: 70px;
+  }
+    
+  .footer__social {
+    margin: 0;
+  }
+
+  
+  .social-icon__footer {
+    fill:var(--primery-fon-color);
+  
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+  }
+  
+  
+  .social__item__footer:hover .social__icon {
+    fill: var(--primery-fon-color);
+    
+  }
+  
+  
+  
+
+  
+  .footer__title {
+    
+    margin-bottom: 20px;
+    
+    
+    font-weight: 700;
+    
+    
+    letter-spacing: 0.03em;
+    
+  color: var(--primery-fon-color);
+  
+  }
+  
+
+ 
+   
+ 
+
+
+
+  
+  .conteiner-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .footer-title__list {
+    margin-left: auto;
+    
+    
+    font-weight: 700;
+    
+    
+    letter-spacing: 0.03em;
+    
+  color: var(--primery-fon-color);
+  }
+  
+  .footer-title__mail {
+    display: inline-block;
+    padding-bottom: 20px;
+  
+  }
+  
+  .field__footer {
+    @include flexed(center,center);
+    
+  }
+  
+  .field-input__footer {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+
+  &::placeholder {
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  
+  @include flexed(center,center);
+  letter-spacing: 0.03em;
+  padding-left: 30px;
+  
+  color: rgba(255, 255, 255, 0.6);
+  
+  }
+  
+  }
+  
+  
+  .field-input__footer::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    
+    @include flexed(center,center);
+    letter-spacing: 0.03em;
+    padding-left: 30px;
+    
+    color: rgba(255, 255, 255, 0.6);
+    
+    }
+    
+  .button__footer {
+
+
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+    padding: 10px 28px;
+  
+    justify-content: space-between;
+  
+    gap: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 188% */
+    
+    @include flexed(center,center);
+    letter-spacing: 0.06em;
+    gap: 10px;
+    
+    
+  
+    
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
+  }
+  
+  
+  .twitter__flight {
+    fill: currentColor;
+    
+  
+  }
+  
+  
