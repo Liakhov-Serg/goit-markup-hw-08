@@ -1,6 +1,7 @@
 /* Чим ми займаємося */
 .section.works {
   padding-top: 0;
+  
 }
 .section-made {
   font-weight: bold;
@@ -11,19 +12,21 @@
   margin-bottom: 50px;
 }
 .section-works {
-  
+  @include flexed(center,center);
+  flex-wrap: wrap;
   gap: 30px;
-  
+  width: 1170px;
+  padding-bottom: 94px;
   
 }
 
 .section-works__title {
-    display: none;
+    display: flex;
  
      
 }
 .works-title__tech {
-  
+  @include flexed(center,center);
 
     width: 370px;
     height: 70px;

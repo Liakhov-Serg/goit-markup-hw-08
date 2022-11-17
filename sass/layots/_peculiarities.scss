@@ -1,13 +1,14 @@
 /* Особливості */
 .box-works {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
   .box-works__item::before {
     display: block;
     content: "";
-    width: 270px;
+    width: 450px;
     height: 120px;
     background: #f5f4fa;
     background-image: url(../images/attentionmin.svg);
@@ -28,10 +29,13 @@
     background-image: url(../images/technologymin.svg);
   }
   .section-title {
+
+    text-align: center;
     font-weight: bold;
     line-height: 1.17;
     font-size: 14px;
     margin-bottom: 10px;
+
   }
   .section-task {
     

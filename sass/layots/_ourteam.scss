@@ -8,15 +8,15 @@
   }
   .section-namelist {
     @include flexed(center,center);
+    flex-wrap: wrap;
     gap: 30px;
-    width: 480px;
+    
     
   }
   
   
   /* team cards */
   .cards {
-    
     background-color: rgba(255, 255, 255, 1);
   
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
