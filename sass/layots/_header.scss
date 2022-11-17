@@ -3,13 +3,11 @@
 .header {
   background-color:var(--primery-fon-color);
   border: 1px solid rgba(236, 236, 236, 1);
+
+
 }
-/* conteiner header */
-.header__link:hover,
-.header__link:focus {
-  color: var(--body-text-color);
-   
-}
+
+  
 
 ul {
   list-style: none;
@@ -18,59 +16,15 @@ ul {
 }
 /* Menu navigation */
 .main-nav {
-  @include flexed(center,center);
+  background-color: red;
  
 }
 
-/* logotype */
-
-.logo {
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: bold;
-  color: rgba(33, 150, 243, 1);
-  
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-    &:hover,
-    &:focus {
-      color: var(--body-text-color);
-      
-    }
-}
-
-.accent {
-  font-family: "Raleway";
-  font-size: 26px;
-  font-weight: bold;
-  color: rgb(0, 0, 1);
-  margin-right: 93px;
-
-  transition-duration: var(--transition-duration); 
-  transition-timing-function:var(--transition-timing-function);
-  &:hover,
-  &:focus {
-    color: var(--body-text-color);
-    
-   
-  }
-  &--color {
-      color: var(--primery-fon-color);
-  }
-}
 
 
 /* site-nav */
 
- .site-nav__link {
-  padding-top: 28px;
-  padding-bottom: 28px;
-
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-
-}
-
+ 
 
 .site-nav__link {
   text-decoration: none;
@@ -96,7 +50,7 @@ ul {
 }
 
 .site-nav {
-  @include flexed(center,center);
+  // @include flexed(center,center);
 
 line-height: 1.14;
 letter-spacing: 0.02em;
@@ -140,13 +94,27 @@ font-weight: 500;
 }
 
 
+.button__mob {
+  display: inline-block;
+  
+  border: none;
+  background-color: transparent;
 
-
+}
+.button__mob .icon-close {
+  display: none;
+}
+.button__mob.is-open.icon-close {
+  display: block;
+}
+.button__mob.is-open .icon-menu {
+  display: none;
+}
 
 
 /* auth-nav */
 .auth-nav__list {
-  @include flexed(center,center);
+  // @include flexed(center,center);
   margin-left: auto;
   align-content: center;
   
@@ -170,7 +138,7 @@ font-weight: 500;
 
 .auth-nav__item--mail,
 .auth-nav__item--tel {
-  @include flexed(center,center);
+  // @include flexed(center,center);
   padding-top: 30px;
   padding-bottom: 30px;
   gap: 10px;

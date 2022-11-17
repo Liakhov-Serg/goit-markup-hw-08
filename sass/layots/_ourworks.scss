@@ -11,20 +11,19 @@
   margin-bottom: 50px;
 }
 .section-works {
-  @include flexed(center,center);
+  
   gap: 30px;
-  width: 1170px;
-  padding-bottom: 94px;
+  
   
 }
 
 .section-works__title {
-    display: flex;
+    display: none;
  
      
 }
 .works-title__tech {
-  @include flexed(center,center);
+  
 
     width: 370px;
     height: 70px;
