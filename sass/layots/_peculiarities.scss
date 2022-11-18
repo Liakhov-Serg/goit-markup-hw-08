@@ -2,13 +2,40 @@
 .box-works {
     display: flex;
     flex-wrap: wrap;
+    
     justify-content: center;
     gap: 30px;
+    margin-top: 60px;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+
+    }
+     
   }
+
+    .box-works__item
+       {
+        align-items: center;
+    
+        @media screen and (min-width: 768px) {
+          flex-basis: calc(100% - 60px)/2;
+          
+
+        }
+        @media screen and (min-width: 1200px) {
+          flex-basis: calc(100% - 90px)/4;
+        }
+    
+    }
+
+ 
+  
+  
   .box-works__item::before {
     display: block;
     content: "";
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background: #f5f4fa;
     background-image: url(../images/attentionmin.svg);
@@ -16,7 +43,13 @@
     background-position: center;
   
     margin-bottom: 30px;
-  }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% - 60px)/2;
+
+      }
+      }
+  
   
   .box-works__item:nth-child(2)::before {
     background-image: url(../images/oclockmin.svg);
@@ -35,9 +68,19 @@
     line-height: 1.17;
     font-size: 14px;
     margin-bottom: 10px;
+    max-width: 450px;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% - 60px)/2;
+      max-width: 357px;
 
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% - 90px)/4;
+    }
   }
   .section-task {
+    max-width: 450px;
+    
     
     line-height: 1.71;
     /* or 171% */
@@ -45,7 +88,13 @@
     letter-spacing: 0.03em;
     
     color: var(--primery-text-color-gray);
-    
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% - 60px)/2;
+      max-width: 357px;
+
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% - 90px)/4;
+    }
       }
-  
-  
+    

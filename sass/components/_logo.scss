@@ -9,14 +9,20 @@
     font-weight: bold;
     color: rgba(33, 150, 243, 1);
     text-decoration: none;
+
+    margin-left: 275px;
+
     padding-left: 0px;
     padding-top: 0px;
-    margin: 0;
+    
     padding-top: 0px;
     padding-bottom: 0px;
+
+    position: absolute;
   
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+   
   }
   .main-nav__accent:hover {
     color: rgba(33, 150, 243, 1);

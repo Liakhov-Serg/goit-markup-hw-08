@@ -1,5 +1,23 @@
 .cont__footer {
     display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+  }
+  @media screen and (max-width: 767px) {
+    
+
+  }
+  .conteiner-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: baseline;
+  }
+  .place {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   /* footer backgraund */
@@ -12,6 +30,9 @@
   /*logo footer*/
   .footer__accent--color {
     color: var(--primery-fon-color);
+    padding-bottom: 20px;
+    
+
   }
   .logo-footer .accent-footer:focus,
   .logo-footer .accent-footer:hover {
@@ -19,7 +40,9 @@
   }
   
   
-  
+  .address {
+    
+  }
   
   .map {
     
@@ -139,10 +162,7 @@
 
 
   
-  .conteiner-wrap {
-    display: flex;
-    align-items: baseline;
-  }
+  
   
   .footer-title__list {
     margin-left: auto;
@@ -244,4 +264,5 @@
   
   }
   
+ 
   

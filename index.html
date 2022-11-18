@@ -16,28 +16,28 @@
   <body class="body">
       <!--шапка-->
      <header class="header" class="header__link">
-      <div class="conteiner">
+      <div class="conteiner menu-mob">
        <nav class="main-nav">
         
           <a href="./index.html" 
-             class="logo main-nav__logo"
+             class="logo main-nav__logo
+                    logo-mobail"
                 >Web<span class="accent main-nav__accent"
              class="main-nav__link"
                 >Studio</span></a>
+                <div class="menu-container">
           <ul class="site-nav site-nav__link">
             <li class="site-nav__item">
               <a href="./index.html" 
               class="site-nav__link 
               site-nav__link--carrent"
               >Студія</a>
-              <button type="button" class="button__mob is-open">
-                <svg
-                  width="400" height="40"
-                  aria-label="Перемикач мобільного меню">
-                  <use class="icon-menu" href="./images/symbol-defs.svg#icon-menumobmin"></use>
-                  <use class="icon-menu" href="./images/symbol-defs.svg#icon-closenavigationmin"></use>
-                </svg>
-              </button>
+              
+
+             <div class="menu-container is-open" id="menu-container" data-menu>
+              <div class="navigation"></div>
+              <div class="contacts"></div> 
+             </div> 
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
@@ -68,6 +68,21 @@
               
           </li>
         </ul>
+      </div>
+      <button 
+      type="button" 
+      class="menu-button"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      data-menu-batton
+      >
+        <svg
+          width="400" height="40"
+          aria-label="Перемикач мобільного меню">
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menumobmin"></use>
+          <use class="icon-cross" href="./images/symbol-defs.svg#icon-closenavigationmin"></use>
+          </svg>
+      </button>
        </nav>
       </div>
      </header>
@@ -606,6 +621,7 @@
 
     </div>
    </div>
+   <script src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
 </body>
 
