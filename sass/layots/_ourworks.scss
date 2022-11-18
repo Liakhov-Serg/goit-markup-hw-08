@@ -1,9 +1,17 @@
 /* Чим ми займаємося */
-.section.works {
+.section-work {
+  background-color: aqua;
+  display: none;
+  @media screen and (min-width: 1200px)
+ {
+    width: 1200px;
+   display: flex;
+}
   padding-top: 0;
   
 }
 .section-made {
+  
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;

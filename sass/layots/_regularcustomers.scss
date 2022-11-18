@@ -13,21 +13,27 @@
   .clients__size {
     @include flexed(center,center);
     flex-wrap: wrap;
-    flex-direction: column;
+    
     gap: 30px;
-    width: 210px;
+    
   }
   
   
   .client__cards {
     @include flexed(center,center);
   
-    width: 170px;
+    width: 210px;
     height: 92px;
-    
-    
+    @media screen and (min-width: 480px) {
+    flex-basis: calc(33% - 15px)/2;
+    }
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+      
+    }
   
-  }
+  
   .client__item {
     @include flexed(center,center);
 
