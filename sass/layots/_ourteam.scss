@@ -2,12 +2,14 @@
 
 
 .section-team {
+  
   display: flex;
   align-items: center;
   justify-items: center;
     background-color: rgba(245, 244, 250, 1);
     padding-top: 94px;
     padding-bottom: 94px;
+    display: none;
   }
   .section-namelist {
     @include flexed(center,center);

@@ -25,7 +25,9 @@ ul {
 /* Menu navigation */
 .main-nav {
   @include flexed(center,center);
- 
+  width: 100%;
+  align-items: center;
+ justify-content: space-between;
 }
 
 /* logotype */
@@ -66,9 +68,15 @@ ul {
 }
 
 .menu-button {
-  background-color: transparent;
+  background-color: var(--primery-fon-color);
+  
   border: none;
-  margin-left: 100px;
+  margin-left: 0px;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu-button .icon-cross {
   display: block;

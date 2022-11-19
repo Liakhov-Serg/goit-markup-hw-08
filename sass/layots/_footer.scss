@@ -8,11 +8,15 @@
     
 
   }
+  
   .conteiner-wrap {
     display: flex;
     flex-direction: column;
     gap: 60px;
     align-items: baseline;
+    text-align: center;
+
+    
   }
   .place {
     display: flex;
@@ -28,6 +32,11 @@
     padding-bottom: 60px;
   }
   /*logo footer*/
+
+  .footer__logo {
+    display: block;
+    margin-right: 124px;
+  }
   .footer__accent--color {
     color: var(--primery-fon-color);
     padding-bottom: 20px;
@@ -41,7 +50,7 @@
   
   
   .address {
-    background-color: #fff;
+    margin: auto;
   }
   
   .map {
@@ -115,7 +124,8 @@
   }
    
   .footer__join {
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
   }
     
   .footer__social {
@@ -142,6 +152,7 @@
   
   .footer__title {
     
+    display: block;
     margin-bottom: 20px;
     
     
@@ -167,11 +178,14 @@
   .footer-title__list {
     margin-left: auto;
     
-    
+    display: flex;
+    flex-direction: column;
     font-weight: 700;
     
     
     letter-spacing: 0.03em;
+
+
     
   color: var(--primery-fon-color);
   }
@@ -185,6 +199,9 @@
   .field__footer {
     @include flexed(center,center);
     
+  }
+  .label__footer {
+    display: block;
   }
   
   .field-input__footer {
