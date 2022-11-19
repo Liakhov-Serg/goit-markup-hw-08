@@ -15,7 +15,7 @@
     gap: 60px;
     align-items: baseline;
     text-align: center;
-
+align-items: center;
     
   }
   .place {
@@ -35,7 +35,7 @@
 
   .footer__logo {
     display: block;
-    margin-right: 124px;
+    
   }
   .footer__accent--color {
     color: var(--primery-fon-color);
@@ -85,7 +85,7 @@
   
     color: rgba(255, 255, 255, 0.6);
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 8px;
   
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -109,7 +109,7 @@
     color: rgba(255, 255, 255, 0.6);
   
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 8px;
   
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -168,13 +168,7 @@
 
  
    
- 
-
-
-
-  
-  
-  
+   
   .footer-title__list {
     margin-left: auto;
     
@@ -191,13 +185,15 @@
   }
   
   .footer-title__mail {
-    display: inline-block;
+    display: flex;
     padding-bottom: 20px;
+    justify-content: center
   
   }
   
   .field__footer {
     @include flexed(center,center);
+    flex-direction: column;
     
   }
   .label__footer {
@@ -205,8 +201,10 @@
   }
   
   .field-input__footer {
-    width: 358px;
+    width: 450px;
     height: 50px;
+
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;

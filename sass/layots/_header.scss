@@ -5,8 +5,25 @@
   border: 1px solid rgba(236, 236, 236, 1);
 
 }
-.menu-mob {
+.conteiner-menu__mob {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @media screen and (max-width: 480px) {
+    
+    background-color: bisque;
+  }
+  @media screen and (min-width: 480px) and (max-width: 766px) {
+    display: flex;
+    width: 100%;
+  align-items: center;
+ justify-content: space-between;
+ background-color: aqua;
+  }
+  @media screen and (min-width: 767px) and (max-width: 1200px) {
+    background-color: red;
+  }
 }
   
 
@@ -25,9 +42,12 @@ ul {
 /* Menu navigation */
 .main-nav {
   @include flexed(center,center);
-  width: 100%;
-  align-items: center;
- justify-content: space-between;
+  
+
+ @media screen and (max-width: 767px) {
+  
+
+ }
 }
 
 /* logotype */
@@ -52,7 +72,7 @@ ul {
   font-size: 26px;
   font-weight: bold;
   color: rgb(0, 0, 1);
-  margin-right: 93px;
+  
 
   transition-duration: var(--transition-duration); 
   transition-timing-function:var(--transition-timing-function);

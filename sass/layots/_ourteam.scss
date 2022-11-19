@@ -9,7 +9,7 @@
     background-color: rgba(245, 244, 250, 1);
     padding-top: 94px;
     padding-bottom: 94px;
-    display: none;
+    
   }
   .section-namelist {
     @include flexed(center,center);
@@ -34,6 +34,16 @@
   
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+    @media screen and (min-width: 480px) {
+      background-image: url("../images/igormob.jpg");
+    }
+    @media screen and (min-width: 767px) {
+      background-image: url("../images/igortablet.jpg");
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url("../images/igor.jpg");
+    }
+  
   }
   
   .name {

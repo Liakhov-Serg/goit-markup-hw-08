@@ -257,10 +257,41 @@ summary {
   border: 1px solid rgb(236, 236, 236);
 }
 
-.menu-mob {
+.conteiner-menu__mob {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .conteiner-menu__mob {
+    background-color: bisque;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 766px) {
+  .conteiner-menu__mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: aqua;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .conteiner-menu__mob {
+    background-color: red;
+  }
 }
 
 /* conteiner header */
@@ -286,13 +317,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
-
 /* logotype */
 .logo {
   font-family: "Raleway";
@@ -315,7 +340,6 @@ ul {
   font-size: 26px;
   font-weight: bold;
   color: rgb(0, 0, 1);
-  margin-right: 93px;
   -webkit-transition-duration: var(--transition-duration);
        -o-transition-duration: var(--transition-duration);
           transition-duration: var(--transition-duration);
@@ -570,12 +594,37 @@ ul {
   background-size: contain;
   padding-top: 0px;
   padding-bottom: 94px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img.jpg");
-  background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/heromob.jpg");
+  background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heromob.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heromob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #212121;
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .box-hero {
+    background-image: url("../images/heromob@2x.jpg");
+  }
+}
+@media screen and (max-width: 1199px) {
+  .box-hero {
+    background-image: url("../images/herotablet.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (max-width: 1199px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 1199px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 1199px), (min-resolution: 192dpi) and (max-width: 1199px), (min-resolution: 2dppx) and (max-width: 1199px) {
+  .box-hero {
+    background-image: url("../images/herotablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box-hero {
+    background-image: url("../images/img.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .box-hero {
+    background-image: url("../images/Img@2x.jpg");
+  }
 }
 
 .hero-wrapper {
@@ -779,7 +828,6 @@ ul {
 /* Чим ми займаємося */
 .section-work {
   background-color: aqua;
-  display: none;
   padding-top: 0;
 }
 @media screen and (min-width: 1200px) {
@@ -858,7 +906,6 @@ ul {
   background-color: rgb(245, 244, 250);
   padding-top: 94px;
   padding-bottom: 94px;
-  display: none;
 }
 
 .section-namelist {
@@ -892,6 +939,21 @@ ul {
   -webkit-transition-timing-function: var(--transition-timing-function);
        -o-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
+}
+@media screen and (min-width: 480px) {
+  .cards {
+    background-image: url("../images/igormob.jpg");
+  }
+}
+@media screen and (min-width: 767px) {
+  .cards {
+    background-image: url("../images/igortablet.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards {
+    background-image: url("../images/igor.jpg");
+  }
 }
 
 .name {
@@ -1130,6 +1192,9 @@ ul {
       -ms-flex-align: baseline;
           align-items: baseline;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .place {
@@ -1155,7 +1220,6 @@ ul {
 /*logo footer*/
 .footer__logo {
   display: block;
-  margin-right: 124px;
 }
 
 .footer__accent--color {
@@ -1198,7 +1262,7 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
   -webkit-transition-duration: var(--transition-duration);
        -o-transition-duration: var(--transition-duration);
           transition-duration: var(--transition-duration);
@@ -1217,7 +1281,7 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
   -webkit-transition-duration: var(--transition-duration);
        -o-transition-duration: var(--transition-duration);
           transition-duration: var(--transition-duration);
@@ -1280,8 +1344,13 @@ ul {
 }
 
 .footer-title__mail {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .field__footer {
@@ -1294,6 +1363,10 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .label__footer {
@@ -1301,8 +1374,9 @@ ul {
 }
 
 .field-input__footer {
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -2145,6 +2219,9 @@ ul.section-title {
       -ms-flex-align: baseline;
           align-items: baseline;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .place {
@@ -2170,7 +2247,6 @@ ul.section-title {
 /*logo footer*/
 .footer__logo {
   display: block;
-  margin-right: 124px;
 }
 
 .footer__accent--color {
@@ -2213,7 +2289,7 @@ ul.section-title {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
   -webkit-transition-duration: var(--transition-duration);
        -o-transition-duration: var(--transition-duration);
           transition-duration: var(--transition-duration);
@@ -2232,7 +2308,7 @@ ul.section-title {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
   -webkit-transition-duration: var(--transition-duration);
        -o-transition-duration: var(--transition-duration);
           transition-duration: var(--transition-duration);
@@ -2295,8 +2371,13 @@ ul.section-title {
 }
 
 .footer-title__mail {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .field__footer {
@@ -2309,6 +2390,10 @@ ul.section-title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .label__footer {
@@ -2316,8 +2401,9 @@ ul.section-title {
 }
 
 .field-input__footer {
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
