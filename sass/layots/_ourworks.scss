@@ -1,13 +1,16 @@
 /* Чим ми займаємося */
 .section-work {
-  background-color: aqua;
   
-  @media screen and (min-width: 1200px)
+  
+  @media screen and (max-width: 1200px)
  {
-    width: 1200px;
-   display: flex;
+  display: none; 
+  
+  width: 1200px;
+   
+   padding-top: 0;
 }
-  padding-top: 0;
+  
   
 }
 .section-made {

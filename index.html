@@ -26,18 +26,38 @@
              class="main-nav__link"
                 >Studio</span></a>
 
+                <button 
+      type="button" 
+      class="menu-button"
+      aria-expanded="false"
+      
+      js-menu-container
+      >
+        <svg
+          width="40" height="40"
+          aria-label="Перемикач мобільного меню">
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menumobmin"></use>
+          <use class="icon-cross" href="./images/symbol-defs.svg#icon-closenavigationmin"></use>
+          </svg>
+      </button>
+      
+
         
-                <div class="menu-container">
+                <div class="menu-nav__container">
           <ul class="site-nav site-nav__link">
             <li class="site-nav__item">
               <a href="./index.html" 
               class="site-nav__link 
               site-nav__link--carrent"
               >Студія</a>
+
+              
               
 
              <div class="menu-container is-open" id="menu-container" data-menu>
               <div class="navigation"></div>
+
+              
               <div class="contacts"></div> 
              </div> 
             </li>
@@ -71,20 +91,6 @@
           </li>
         </ul>
       </div>
-      <button 
-      type="button" 
-      class="menu-button js-open-menu"
-      aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-batton
-      >
-        <svg
-          width="40" height="40"
-          aria-label="Перемикач мобільного меню">
-          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menumobmin"></use>
-          <use class="icon-cross" href="./images/symbol-defs.svg#icon-closenavigationmin"></use>
-          </svg>
-      </button>
        </nav>
       </div>
      </header>
