@@ -34,10 +34,10 @@
   
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 767px) {
       background-image: url("../images/igormob.jpg");
     }
-    @media screen and (min-width: 767px) {
+    @media screen and (max-width: 1199px) {
       background-image: url("../images/igortablet.jpg");
     }
     @media screen and (min-width: 1200px) {

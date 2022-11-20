@@ -7,10 +7,13 @@
 }
  .conteiner-menu__mob {
    display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   position: relative;
+
+padding: 16px 15px;
+margin: auto;
   
    @media screen and (max-width: 480px) {
     
@@ -50,6 +53,7 @@ ul {
 
   width: 100%;
   top: 100%;
+  justify-content: space-around;
 }
 /* Menu navigation */
 .main-nav {

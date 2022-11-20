@@ -261,13 +261,15 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 16px 15px;
+  margin: auto;
 }
 @media screen and (max-width: 480px) {
   .conteiner-menu__mob {
@@ -295,6 +297,8 @@ ul {
   background-color: aqua;
   width: 100%;
   top: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /* Menu navigation */
@@ -698,7 +702,7 @@ ul {
           justify-content: center;
   margin-top: 60px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .box-works {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -709,13 +713,7 @@ ul {
             align-items: center;
   }
 }
-@media screen and (max-width: 480px) and (max-width: 768px) {
-  .box-works {
-    width: 768px;
-    gap: 30px;
-  }
-}
-@media screen and (max-width: 480px) and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .box-works {
     width: 1200px;
     gap: 30px;
@@ -737,13 +735,6 @@ ul {
         flex-basis: calc(100% - 90px);
   }
 }
-@media screen and (min-width: 1200px) {
-  .box-works__item {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
-
 .box-works__item::before {
   display: block;
   content: "";
@@ -920,12 +911,12 @@ ul {
        -o-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .cards {
     background-image: url("../images/igormob.jpg");
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 1199px) {
   .cards {
     background-image: url("../images/igortablet.jpg");
   }
@@ -1705,7 +1696,7 @@ ul {
   min-width: 450px;
   padding: 20px;
   top: 50%;
-  right: 36%;
+  right: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1716,7 +1707,10 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    width: 480px;
+    right: -10%;
+    margin-top: 93px;
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 768px) {
