@@ -268,13 +268,7 @@ summary {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 16px 15px;
   margin: auto;
-}
-@media screen and (max-width: 480px) {
-  .conteiner-menu__mob {
-    background-color: bisque;
-  }
 }
 
 /* conteiner header */
@@ -290,15 +284,14 @@ ul {
 }
 
 .menu-nav__container {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: aqua;
-  width: 100%;
-  top: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+}
+@media screen and (max-width: 767px) {
+  .menu-nav__container {
+    display: none;
+  }
 }
 
 /* Menu navigation */
@@ -312,6 +305,9 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .main-nav {
@@ -376,8 +372,13 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
+}
 
-.menu-button .icon-cross {
+.menu-button.icon-cross {
   display: none;
 }
 
@@ -386,6 +387,10 @@ ul {
 }
 
 .menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
   display: none;
 }
 
@@ -476,20 +481,34 @@ ul {
   margin-left: auto;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding: 0;
   font-weight: 500;
   font-size: 100%;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primery-text-color-gray);
 }
+@media screen and (min-width: 768px) {
+  .auth-nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .a.link {
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.auth-nav__item--tel {
-  margin-left: 50px;
 }
 
 .auth-nav__item--mail,
@@ -503,8 +522,6 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
   gap: 10px;
   color: var(--primery-text-color-gray);
   text-decoration: none;
@@ -911,19 +928,16 @@ ul {
        -o-transition-timing-function: var(--transition-timing-function);
           transition-timing-function: var(--transition-timing-function);
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .cards {
-    background-image: url("../images/igormob.jpg");
-  }
-}
-@media screen and (max-width: 1199px) {
-  .cards {
-    background-image: url("../images/igortablet.jpg");
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .cards {
-    background-image: url("../images/igor.jpg");
+    -ms-flex-preferred-size: calc((100% - 120px) / 4);
+        flex-basis: calc((100% - 120px) / 4);
   }
 }
 
@@ -1571,11 +1585,6 @@ ul {
             flex-direction: column;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .conteiner-wrap {
-    background-color: azure;
-  }
-}
 /*Form footer*/
 .field__footer {
   display: -webkit-box;
@@ -1691,36 +1700,42 @@ ul {
 }
 
 /* modal window */
+.backdrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal {
-  position: absolute;
-  min-width: 450px;
-  padding: 20px;
-  top: 50%;
-  right: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  position: relative;
+  width: 450px;
+  height: 609px;
+  padding: 40px;
   border-radius: 4px;
   background: var(--primery-fon-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media screen and (min-width: 480px) {
-  .modal {
-    right: -10%;
-    margin-top: 93px;
-    width: 450px;
-    height: 609px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 768px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 1200px;
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1756,7 +1771,7 @@ ul {
 
 /* form modal window */
 .form__title {
-  padding-bottom: 20px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1767,7 +1782,7 @@ ul {
 
 .label {
   display: block;
-  padding-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .label__text {
@@ -1924,10 +1939,16 @@ ul {
 .privacy__text {
   margin-left: 8px;
   cursor: pointer;
+  font-size: 12px;
   line-height: 1.71;
   /* identical to box height, or 171% */
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .privacy__text {
+    font-size: 14px;
+  }
 }
 
 /* .privacy__link { */
@@ -2613,11 +2634,6 @@ ul.section-title {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .conteiner-wrap {
-    background-color: azure;
   }
 }
 html,
