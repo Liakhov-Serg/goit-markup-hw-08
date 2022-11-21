@@ -284,6 +284,7 @@ ul {
 }
 
 .menu-nav__container {
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +388,7 @@ ul {
 }
 
 .menu-button.is-open .icon-menu {
-  display: none;
+  display: block;
 }
 
 .menu-button.is-open .icon-cross {
@@ -503,6 +504,11 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+@media screen and (max-width: 767px) {
+  .auth-nav__list {
+    display: none;
   }
 }
 

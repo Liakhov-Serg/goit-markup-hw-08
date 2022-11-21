@@ -42,6 +42,7 @@ ul {
 }
 
 .menu-nav__container {
+  background-color: red;
 
   display: flex;
 
@@ -134,7 +135,7 @@ ul {
 }
 
 .menu-button.is-open .icon-menu {
-  display: none;
+  display: block;
 }
 
 .menu-button.is-open .icon-cross {
@@ -270,14 +271,25 @@ ul {
     gap: 10px;
 
   }
-
   @media screen and (min-width: 1200px) {
     flex-direction: row;
     
 
   }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+    
+  }
 
-}
+    
+  
+ 
+  
+
+ 
+
+
 
 .a.link {
   padding-top: 30px;
