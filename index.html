@@ -18,7 +18,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="body">
+  <body class="body" style="overflow: hidden;">
     <!--шапка-->
     <header class="header" class="header__link">
       <div class="conteiner conteiner-menu__mob">
@@ -68,15 +68,22 @@
 
         <button
           type="button"
-          class="menu-button is-open"
+          class="menu-togle js-open-menu"
           aria-expanded="false"
-          js-menu-container
-        >
+          aria-controls="mobile-menu"
+             >
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use
               class="icon-menu"
               href="./images/symbol-defs.svg#icon-menumobmin"
             ></use>
+          </button>
+            <button
+            type="button"
+            class="menu-togle js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"> 
+            <svg width="40" height="40">   
             <use
               class="icon-cross"
               href="./images/symbol-defs.svg#icon-closenavigationmin"
@@ -84,7 +91,7 @@
           </svg>
         </button>
         <div>
-          <div class="menu-container is-open" id="menu-container" data-menu>
+          <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
             <div class="navigation"></div>
 
             <div class="contacts"></div>
@@ -850,14 +857,9 @@
         </form>
       </div>
     </div>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    
     <script src="./js/modal.js"></script>
   </body>
 </html>
