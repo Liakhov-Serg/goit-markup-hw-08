@@ -1,10 +1,13 @@
 /* header */
 /* основний фон шапки */
-.header {
-  background-color: var(--primery-fon-color);
-  border: 1px solid rgba(236, 236, 236, 1);
-
+.header 
+  {
+    background-color: var(--primery-fon-color);
+    border-bottom: 1px solid #ececec;
+    padding: 16px 0;
 }
+
+ 
 
 .conteiner-menu__mob {
   display: flex;
@@ -133,6 +136,9 @@ ul {
 
 .menu-toggle {
 
+  width: 40px;
+  height: 40px;
+  padding: 0;
 
   @media screen and (min-width: 767px) {
     display: none;
@@ -175,12 +181,15 @@ ul {
     height: 100vh;
     background-color: #fff;
     padding: 48px 40px;
-    text-align: center;
+
+    flex-direction: column;
+    justify-content: space-between;
+    
     font-size: 20px;
     transform: translateX(100%);
     transition: transform var(--transition-duration) var(--transition-timing-function);
     &.is-open {
-      display: block;
+      display: flex;
       transform: translateX(0);
     }
 }
@@ -192,7 +201,10 @@ ul {
     font-size: 40px;
     line-height: 1.175;
     letter-spacing: .02em;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
 }
 .mobile-contact__list {
   margin-bottom: 64px;
@@ -221,6 +233,9 @@ ul {
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: .02em;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
  }
   .mobile-social__item:not(:last-child) {
     border-right: 1px solid rgb(33 33 33 / 20%);
@@ -233,15 +248,15 @@ ul {
     letter-spacing: .02em;
     padding: 0 10px;
   }
-  
+  .mobile-social__item:first-child .mobile-social__link {
+    padding: 0 10px 0 0;
+}
+
 
 .navigation {
   
   text-decoration: none;
 
-}
-.contacts {
-  background-color: aqua;
 }
 
 /* site-nav */
@@ -263,6 +278,7 @@ ul {
       height: 40px;
       background: transparent;
       border: none;
+      padding: 0;
   }
   
   

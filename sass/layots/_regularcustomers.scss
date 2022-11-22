@@ -27,7 +27,8 @@
   .client__cards {
     @include flexed(center,center);
   
-    width: 210px;
+    width: calc(210px - 15px);
+
     height: 92px;
     @media screen and (min-width: 480px) {
     flex-basis: calc(33% - 15px)/2;

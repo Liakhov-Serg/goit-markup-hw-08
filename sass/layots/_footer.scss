@@ -189,7 +189,8 @@
   }
   
   .field-input__footer {
-    width: 358px;
+    max-width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -261,7 +262,7 @@
   
   .twitter__flight {
     fill: currentColor;
-    
+ 
   
   }
   @media screen and (max-width: 1199px) {
@@ -278,15 +279,18 @@
         flex-basis: calc(50% - 30px);
       }
     }
-    
+    .form__footer {
+      width: 100%;
+    }
     
     .field__footer {
-      width: 450px;
+      
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
     .footer-title__list {
+      width: 100%;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -300,10 +304,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media screen and (max-width: 1200px) {
-      margin-right: 215px;
-      
-    }
+
+    
   }
   .address {
     display: flex;

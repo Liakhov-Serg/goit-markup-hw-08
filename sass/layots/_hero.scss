@@ -9,13 +9,11 @@
   .box-hero {
     background-color: #212121;
   max-width: 1600px;
-    height: 600px;
-  
+    
     margin: 0 auto;
     background-size: contain;
   
-    padding-top: 0px;
-    padding-bottom: 94px;
+    padding: 118px 0;
   
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -68,7 +66,7 @@
 
 
   .hero-wrapper {
-    padding-top: 200px;
+    
     text-align: center;
     max-width: 696px;
     margin: auto;
@@ -77,14 +75,17 @@
   .hero-title {
     padding: 0px 0px;
     margin-bottom: 30px;
-  
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    color: #ffffff;
+    letter-spacing: 0.06em;
+    font-size: 26px;
+    line-height: 1.62;
+    color: #fff;
+
+    
   
-    /* hero batton */
+    
   }
+  /* hero batton */
   .hero-batton {
     @include flexed(center,center);
   }
@@ -93,7 +94,7 @@
     @include flexed(center,center);
   
     /* size button */
-    min-width: 216px;
+    width: 200px;
     border: transparent;
   
     /* color shadow batton*/
@@ -102,7 +103,7 @@
   
     /* position text button */
      
-     padding: 10px 32px;
+     
      
   
      /* text button */
