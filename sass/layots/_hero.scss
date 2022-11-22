@@ -81,7 +81,11 @@
     line-height: 1.62;
     color: #fff;
 
-    
+   @media screen and (min-width: 768px){
+    max-width: 360px;
+    margin: 0 auto 30px;
+
+   } 
   
     
   }

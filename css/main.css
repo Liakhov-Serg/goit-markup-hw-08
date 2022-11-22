@@ -259,7 +259,7 @@ summary {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 26px 0;
+    padding: 21px 0;
   }
 }
 
@@ -612,7 +612,7 @@ ul {
   height: 4px;
   border-radius: 2px;
   background-color: var(--body-text-color);
-  bottom: -36px;
+  bottom: -41px;
   position: absolute;
 }
 
@@ -801,6 +801,12 @@ ul {
   font-size: 26px;
   line-height: 1.62;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 360px;
+    margin: 0 auto 30px;
+  }
 }
 
 /* hero batton */
