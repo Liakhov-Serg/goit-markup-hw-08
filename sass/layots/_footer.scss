@@ -13,12 +13,16 @@
 
   .conteiner-wrap {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    
+    flex-wrap: wrap;
+    
 
     @media screen and (min-width: 767px) and
     (max-width: 1199px) {
       justify-content: center;
+    }
+    @media screen and (max-width: 767px)  {
+      flex-direction: column;
     }
   }
 
@@ -260,15 +264,20 @@
     
   
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     .conteiner-wrap {
-      align-items: center;
+      
       gap: 60px;
       
-      flex-direction: column;
+      
 
     }
-    
+    .footer__join, .place {
+      @media screen and (min-width: 768px) 
+      and (max-width: 1199px) {
+        flex-basis: calc(50% - 30px);
+      }
+    }
     
     
     .field__footer {
@@ -291,6 +300,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 1200px) {
+      margin-right: 215px;
+      
+    }
   }
   .address {
     display: flex;
