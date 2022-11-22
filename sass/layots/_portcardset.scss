@@ -5,17 +5,18 @@
     padding-bottom: 94px;
   }
   
-  ul.section-title {
+  .section-title {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: unset;
   
    
   }
   
   .section-title__card {
     /* background-color: yellow; */
-    flex-basis: calc((100% - 30px * 2) / 3);
+   
     
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function); 
