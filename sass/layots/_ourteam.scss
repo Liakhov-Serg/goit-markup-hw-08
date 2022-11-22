@@ -8,6 +8,11 @@
   justify-items: center;
     background-color: rgba(245, 244, 250, 1);
     padding: 60px 0;
+
+    @media screen and (min-width: 1200px) {
+      
+      padding: 94px 0;
+    }
     
   }
   .section-namelist {

@@ -9,6 +9,9 @@
     @media screen and (min-width: 768px) {
       padding: 21px 0;
     }
+    @media screen and (min-width: 1200px) {
+      padding: 25px 0;
+    }
 
 }
 
@@ -115,12 +118,7 @@ ul {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 
-  &:hover,
-  &:focus {
-    color: var(--body-text-color);
-
-
-  }
+ 
 
   &--color {
     color: var(--primery-fon-color);
@@ -352,9 +350,15 @@ ul {
     background-color: var(--body-text-color);
     bottom: -41px;
     position: absolute;
+
+    @media screen and (min-width: 1200px) {
+      bottom: -34px;
+    }
+      
+    }
   }
 
-}
+
 
 
 
@@ -381,6 +385,7 @@ ul {
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
+    gap: 30px;
     
 
   }
