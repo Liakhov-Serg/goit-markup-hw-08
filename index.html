@@ -18,7 +18,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body class="body" style="overflow: hidden;">
+  <body class="body">
     <!--шапка-->
     <header class="header" class="header__link">
       <div class="conteiner conteiner-menu__mob">
@@ -68,33 +68,64 @@
 
         <button
           type="button"
-          class="menu-togle js-open-menu"
+          
+          class="menu-toggle js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile-menu"
+          aria-controls="menu-container"
              >
-          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use
-              class="icon-menu"
-              href="./images/symbol-defs.svg#icon-menumobmin"
-            ></use>
-          </button>
-            <button
-            type="button"
-            class="menu-togle js-close-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"> 
-            <svg width="40" height="40">   
-            <use
-              class="icon-cross"
+          <svg width="40" height="40" 
+          aria-label="Перемикач мобільного меню">
+            
+            <use class="icon-cross"
               href="./images/symbol-defs.svg#icon-closenavigationmin"
             ></use>
+            <use class="icon-menu"
+              href="./images/symbol-defs.svg#icon-menumobmin"
+            ></use>
           </svg>
-        </button>
+        
+          </button>
+            
         <div>
-          <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
-            <div class="navigation"></div>
+          <div class="menu-container js-menu-container" id="menu-container" data-menu>
+            <div class="navigation">
+              <ul class="mobile-nav__list list">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link link mobile-nav__link--current" href="./index.html">Студія</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+            </div>
 
-            <div class="contacts"></div>
+            <div class="contacts">
+              <ul class="mobile-contact__list list">
+                <li class="mobile-contact__item">
+                  <a class="mobile-tel__link link" href="tel.+380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contact__item">
+                  <a class="mobile-mail__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+              <ul class="mobile-social__list list">
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link link" href="#">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link link" href="#">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link link" href="#">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a class="mobile-social__link link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -857,7 +888,12 @@
         </form>
       </div>
     </div>
-    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/mobile-menu.js"></script>
     
     <script src="./js/modal.js"></script>
